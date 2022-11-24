@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Author: Dalton Lee
+Created: November 13, at 11:00 AM
+Description: This webpage creates a multiplication table completely dynamically based on 
+parameters entered in an HTML form, validated using jquery.validate.js plugin.
+
+File: index.html
+GUI Assignment: Using the jQuery Plugin/UI with Your Dynamic Table PART 1: Validation Plugin
+Dalton Lee, UMass Lowell Computer Science Student, dalton_lee@student.uml.edu
+Copyright (c) 2021 by Dalton. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Dalton Lee on November 13, at 7:00 PM
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dynamic Multiplication Table</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="../js/jquery.validate.js"></script>
+    </head>
+    <body id = "body">
+    <h1>Dynamic Multiplication Table</h1>
+    <!-- 
+    Create div element to contain the form, this will be styled in css..
+    -->
+    <div class="formDiv">
+        <h4>Enter ranges of Multiplication Table</h4>
+        <!-- 
+        Create form element that accepts three kinds of inputs, 'text', 'button', and 'reset'.
+        All text inputs are given a label and represent a value (permutation of row/col & min/max).
+        The button input is to submit values set in the 4 text inputs.
+        The reset input is to clear the 4 text inputs in the form.
+        -->
+        <form id = "mult_form">
+            <label for="crange1" class="val_label">Column Min/Max Value:</label>
+            <input type="text" id="crange1" name="crange1" maxlength="4"><br>
+            <label for="crange2" class="val_label">Column Min/Max Value:</label>
+            <input type="text" id="crange2" name="crange2" maxlength="4"><br>
+            <label for="rrange1" class="val_label">Row Min/Max Value:</label>
+            <input type="text" id="rrange1" name="rrange1" maxlength="4"><br>
+            <label for="rrange2" class="val_label">Row Min/Max Value:</label>
+            <input type="text" id="rrange2" name="rrange2" maxlength="4"><br>
+            <div class = "buttonsDiv">
+                <input type="button" value="Submit" id = "submit_button" onClick = "submissionCheck()">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+    <!-- 
+    Link mult.js to handle html user functionality/responsiveness, a paragraph will be added to display
+    errors made on the user's part (if there are any), and a multiplication table will be added
+    which is created based off the text input values (if there are no errors).
+    -->
+    <script type = "text/javascript" src="../js/mult.js"></script>
+    </body>
+</html>
