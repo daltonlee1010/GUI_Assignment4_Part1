@@ -18,25 +18,29 @@ $().ready(function() {
         rules: {
             crange1: {
                 required: true, // The form cannot be submitted without this input field being entered.
-                digits: true,   // Don't allow inputs that contain anything other than #s 0-9
+                number: true,   // Don't allow inputs that contain anything other than #s 0-9
+                step: 1,        // Require whole numbers to be entered
                 min: -50,       // Number entered is at least -50
                 max: 50         // Number entered is at most 50
             },
             crange2: {
                 required: true,
-                digits: true,
+                number: true,
+                step: 1,
                 min: -50,
                 max: 50
             },
             rrange1: {
                 required: true,
-                digits: true,
+                number: true,
+                step: 1,
                 min: -50,
                 max: 50
             },
             rrange2: {
                 required: true,
-                digits: true,
+                number: true,
+                step: 1,
                 min: -50,
                 max: 50
             }
@@ -45,25 +49,29 @@ $().ready(function() {
         messages: {
             crange1: {
                 required: "Please enter a value for the column range",
-                digits: "Please enter an integer",
+                number: "Please enter a whole number",
+                step: "Please enter a whole number",
                 min: "Enter a number greater than or equal to -50",
                 max: "Enter a number less than or equal to 50"
             },
             crange2: {
                 required: "Please enter a value for the column range",
-                digits: "Please enter an integer",
+                number: "Please enter a whole number",
+                step: "Please enter a whole number",
                 min: "Enter a number greater than or equal to -50",
                 max: "Enter a number less than or equal to 50"
             },
             rrange1: {
                 required: "Please enter a value for the row range",
-                digits: "Please enter an integer",
+                number: "Please enter a whole number",
+                step: "Please enter a whole number",
                 min: "Enter a number greater than or equal to -50",
                 max: "Enter a number less than or equal to 50"
             },
             rrange2: {
                 required: "Please enter a value for the row range",
-                digits: "Please enter an integer",
+                number: "Please enter a whole number",
+                step: "Please enter a whole number",
                 min: "Enter a number greater than or equal to -50",
                 max: "Enter a number less than or equal to 50"
             }
