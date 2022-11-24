@@ -1,7 +1,7 @@
 # GUI_Assignment4
 
-GitHub URLs: https://github.com/daltonlee1010/GUI_Assignment4Part1
-             https://daltonlee1010.github.io/GUI_Assignment4Part1/html
+GitHub URLs: https://github.com/daltonlee1010/GUI_Assignment4_Part1
+             https://daltonlee1010.github.io/GUI_Assignment4_Part1/html
 
 
 Author: Dalton Lee
